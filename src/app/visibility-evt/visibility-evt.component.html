@@ -1,0 +1,26 @@
+<h2 mat-dialog-title>Détails de l'événement</h2>
+
+<mat-dialog-content>
+  <mat-list role="list" *ngIf="EventAffiche">
+    <mat-list-item role="listitem">
+      <div mat-line><strong>Titre :</strong> {{EventAffiche.titre}}</div>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <div mat-line><strong>Date de début :</strong> {{EventAffiche.DateDebut | date}}</div>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <div mat-line><strong>Date de fin :</strong> {{EventAffiche.DateFin | date}}</div>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <div mat-line><strong>Lieu :</strong> {{EventAffiche.lieu}}</div>
+    </mat-list-item>
+  </mat-list>
+  
+  <div *ngIf="!EventAffiche" class="loading">
+    Chargement des détails...
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Fermer</button>
+</mat-dialog-actions>

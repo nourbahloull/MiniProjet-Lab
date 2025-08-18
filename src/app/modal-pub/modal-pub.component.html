@@ -1,0 +1,37 @@
+<mat-dialog-content [formGroup]="form">
+    <mat-form-field>
+    
+        <input matInput placeholder="titre"  formControlName="titre">
+      </mat-form-field>
+      <h4>mat-select</h4>
+      
+  <mat-form-field>
+    <mat-label>type</mat-label>
+    <mat-select [(ngModel)]="type" name="type">
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{food.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <p> Selected food: {{type}} </p>
+
+  <mat-form-field>
+    
+    <input matInput placeholder="lieu"  formControlName="lieu">
+  </mat-form-field>
+  <mat-form-field>
+    
+    <input matInput [matDatepicker]="picker" formControlName="Date">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field>
+    
+    <input matInput placeholder="Sourcepdf"  formControlName="Sourcepdf">
+  </mat-form-field>
+  <h4>mat-select</h4>
+  <button class="mat-raised-button"(click)="close()">Close</button>
+  <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
+
+</mat-dialog-content>

@@ -1,0 +1,114 @@
+{
+  "members": [
+    {
+      "id": "82b7",
+      "cin": "1111",
+      "name": "oumayma",
+      "type": "student",
+      "createdDate": "30/01",
+      "tab_evt":[{
+      "id":"string",
+      "titre":"string",
+      "DateDebut":"Date",
+      "DateFin":"Date",
+      "lieu" : "tunis"}
+      ]    },
+    {
+      "id": "fbdd",
+      "cin": "555",
+      "name": "omar",
+      "type": "Teacher",
+      "createdDate": "29",
+      "tab_evt":[{
+        "id":"string",
+        "titre":"string",
+        "DateDebut":"Date",
+        "DateFin":"Date",
+        "lieu" : "sfax"}
+      ]
+    },
+    {
+      "id": "111",
+      "cin": "555",
+      "name": "omar",
+      "type": "Teacher",
+      "createdDate": "29",
+      "tab_evt":[{
+        "id":"string",
+   "titre":"string",
+    "DateDebut":"Date",
+    "DateFin":"Date",
+    "lieu" : "sousse"
+      }]    }
+  ],
+  "Evt": [
+    {
+      "id": "006",
+      "titre": "aaaaaa",
+      "DateDebut": "10-01-2025",
+      "DateFin": "30-01-2026",
+      "lieu": "sousse"
+    },
+    {
+      "id": "006",
+      "titre": "aaaaaa",
+      "DateDebut": "10-01-2025",
+      "DateFin": "30-01-2026",
+      "lieu": "tunis"
+    },
+    {
+      "id": "006",
+      "titre": "aaaaaa",
+      "DateDebut": "10-01-2025",
+      "DateFin": "10-01-2026",
+      "lieu": "sousse"
+    },
+    {
+      "id": "006",
+      "titre": "aaaaaa",
+      "DateDebut": "10-01-2025",
+      "DateFin": "10-01-2026",
+      "lieu": "sousse"
+    },
+    {
+      "id": "006",
+      "titre": "aaaaaa",
+      "DateDebut": "10-01-2025",
+      "DateFin": "10-01-2026",
+      "lieu": "sfax"
+    },
+    {
+      "id": "6f70",
+      "titre": "hello",
+      "DateDebut": "10",
+      "DateFin": "25",
+      "lieu": "sfax"
+    }
+  ],
+  "Pub": [
+    {
+      "id": "111",
+      "type": "aaaaa",
+      "titre": "nour",
+      "lieu": "student",
+      "Date": "10/01",
+      "Sourcepdf": "qsdfgh"
+    },
+    {
+      "id": "222",
+      "type": "aaaaa",
+      "titre": "nour",
+      "lieu": "student",
+      "Date": "10/01",
+      "Sourcepdf": "qsdfgh"
+    },
+    {
+      "id": "ea46",
+      "titre": "article",
+      "lieu": "sfax",
+      "Date": "2025-04-15T23:00:00.000Z",
+      "Sourcepdf": "string",
+      "type": null
+    }
+  ]
+}

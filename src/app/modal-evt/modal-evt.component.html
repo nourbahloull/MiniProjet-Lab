@@ -1,0 +1,30 @@
+<mat-dialog-content [formGroup]="form">
+  
+    <mat-form-field>
+        <input matInput
+                placeholder="titre"
+               formControlName="titre">
+    </mat-form-field>
+    <mat-date-range-input [formGroup]="form" [rangePicker]="picker">
+        <input matStartDate formControlName=" DateDebut" placeholder="Start date">
+        <input matEndDate formControlName="DateFin" placeholder="End date">
+      </mat-date-range-input>
+      <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    
+      
+    
+    <mat-form-field>
+        <input matInput
+                placeholder="lieu"
+               formControlName="lieu">
+    </mat-form-field>
+      
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button"(click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
+</mat-dialog-actions>

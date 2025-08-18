@@ -1,0 +1,72 @@
+<div class="dashboard-container">
+  <!-- Cards Section -->
+  <div class="cards-container">
+    <mat-card appearance="outlined" class="card">
+      <mat-card-title>Members</mat-card-title>
+      <mat-card-content>{{ Nb_Members }}</mat-card-content>
+    </mat-card>
+    <mat-card appearance="outlined" class="card">
+      <mat-card-title>Events</mat-card-title>
+      <mat-card-content>{{ Nb_Events }}</mat-card-content>
+    </mat-card>
+    <mat-card appearance="outlined" class="card">
+      <mat-card-title>Publications</mat-card-title>
+      <mat-card-content>{{ Nb_Pubs }}</mat-card-content>
+    </mat-card>
+    <mat-card appearance="outlined" class="card">
+      <mat-card-title>Tools</mat-card-title>
+      <mat-card-content>{{ Nb_Tools }}</mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- Charts Section -->
+  <div class="charts-section">
+    <!-- Line Chart -->
+    <div class="chart-wrapper">
+      <h3>Members Over Time</h3>
+      <canvas
+        baseChart
+        [datasets]="chartData"
+        [labels]="chartLabels"
+        [options]="chartOptions"
+        [type]="'line'"
+      ></canvas>
+    </div>
+
+    <!-- Pie Chart -->
+    <div class="chart-wrapper">
+      <h3>Member Distribution</h3>
+      <canvas
+        baseChart
+        [datasets]="chartDatapie"
+        [labels]="chartLabelspie"
+        [options]="chartOptionspie"
+        [type]="'pie'"
+      ></canvas>
+    </div>
+
+    <!-- Doughnut Chart -->
+    <div class="chart-wrapper">
+      <h3>Events by Location</h3>
+      <canvas
+        baseChart
+        [datasets]="chartDataDoughnut"
+        [labels]="chartLabelsDoughnut"
+        [options]="chartOptionsDoughnut"
+        [type]="'doughnut'"
+      ></canvas>
+    </div>
+    
+    <!-- Events per Member Line Chart -->
+    <div class="chart-wrapper">
+      <h3>Events per Member</h3>
+      <canvas
+        baseChart
+        [datasets]="chartDataLine"
+        [labels]="chartLabelsLine"
+        [options]="chartOptions"
+        [type]="'line'"
+      ></canvas>
+    </div>
+  </div>
+</div>
